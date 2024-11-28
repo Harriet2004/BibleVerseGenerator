@@ -2,4 +2,32 @@ body {
     background-image: url('Bible.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.verseContainer {
+    width: 600px;
+    background-color: tan;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.verseContainer header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.verseContainer .content {
+    margin: 25px;
+}
+
+.verseContainer .passage {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 20px;
 }
