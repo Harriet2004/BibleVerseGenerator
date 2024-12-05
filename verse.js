@@ -2,7 +2,6 @@ const button = document.querySelector('.button button');
 const passage = document.querySelector('.passage p');
 const verse = document.querySelector('.verse p');
 
-// Function to fetch and display a random verse
 function fetchRandomVerse() {
     fetch('verses.php')
         .then(response => {
@@ -23,8 +22,5 @@ function fetchRandomVerse() {
         .catch(error => console.error('Error fetching verse:', error));
 }
 
-// Load a random verse when the page loads
 document.addEventListener('DOMContentLoaded', fetchRandomVerse);
-
-// Fetch a new verse when the button is clicked
 button.addEventListener('click', fetchRandomVerse);
